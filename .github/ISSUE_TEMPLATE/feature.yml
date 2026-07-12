@@ -1,0 +1,38 @@
+name: Player capability
+description: Propose a bounded behavior or system that expands what the player can perceive, decide, or do.
+title: "[Capability]: "
+labels: ["feature"]
+body:
+  - type: textarea
+    id: player_problem
+    attributes:
+      label: Player problem
+      description: What can the player currently not perceive, decide, or do?
+    validations:
+      required: true
+  - type: textarea
+    id: world_behavior
+    attributes:
+      label: Observable world behavior
+      description: What should visibly happen through characters, spaces, objects, routines, or systems?
+    validations:
+      required: true
+  - type: textarea
+    id: systems
+    attributes:
+      label: Systems involved
+      description: Which simulation and presentation systems should own the behavior?
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] The player can...
+        - [ ] The world visibly...
+        - [ ] State saves and restores...
+    validations:
+      required: true
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope

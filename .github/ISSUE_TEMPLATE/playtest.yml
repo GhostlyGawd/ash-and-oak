@@ -1,0 +1,42 @@
+name: Playtest finding
+description: Record confusion, boredom, missing feedback, false choice, or an unexpectedly strong moment.
+title: "[Playtest]: "
+labels: ["playtest"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What was the player trying to do, and what had just happened?
+    validations:
+      required: true
+  - type: dropdown
+    id: finding
+    attributes:
+      label: Finding type
+      options:
+        - Confusion
+        - Missing affordance
+        - Missing feedback
+        - False or obvious choice
+        - Boredom or friction
+        - World felt artificial
+        - Strong positive moment
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: What the player actually did or said
+      description: Record observation rather than an assumed solution.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected experience
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Screenshot, recording, save state, or reproduction notes.
